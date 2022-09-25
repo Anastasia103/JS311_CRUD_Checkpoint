@@ -82,6 +82,8 @@ let updateBook = function(req, res) {
     })
 }
 
+// adds a book to the table given the name and author in the request body
+// note haveRead is always no when it is created
 let createBook = function(req, res) {
     let sql = "INSERT INTO books (name, author, haveRead) values (?, ?, ?)"
     let params = [
