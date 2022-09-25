@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Routes</title>
+</head>
+<body>
+    <h1>All Routes available</h1>
+    <ul>
+        <li>GET /books : get all books in the table</li>
+        <li>GET /books/:id : get a book given an id</li>
+        <li>DELETE /books/:id : delete a book given an id</li>
+        <li>POST /books : create a new book in the table, must have name and author in the request body</li>
+        <li>PUT /books/:id : update a book given the id, must have name, author, and haveRead status (true or false) in the request body</li>
+    </ul>
+</body>
+</html>

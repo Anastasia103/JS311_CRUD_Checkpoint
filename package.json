@@ -1,0 +1,10 @@
+{
+    "name": "crud_checkpoint",
+    "scripts": {
+        "start": "node src/main.js"
+    },
+    "dependencies": {
+        "express": "4.18.1",
+        "mysql": "^2.18.1"
+    }
+}
