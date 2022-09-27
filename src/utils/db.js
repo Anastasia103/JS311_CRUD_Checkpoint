@@ -2,10 +2,10 @@ let mysql = require('mysql')
 
 // adding connection to the databas
 let connection = mysql.createConnection({
-    host: "database-2.cfekt2njspgn.us-east-1.rds.amazonaws.com",
-    user: "admin",
-    password: "Target!72", 
-    database: "hello"
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD, 
+    database: process.env.MYSQL_DATABASE
 })
 
 

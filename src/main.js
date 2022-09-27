@@ -1,5 +1,7 @@
 let express = require("express")
 
+require("dotenv").config()
+
 let PORT = 8080
 
 let app = express()
