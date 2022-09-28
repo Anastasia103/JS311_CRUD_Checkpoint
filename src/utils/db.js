@@ -11,4 +11,13 @@ let connection = mysql.createConnection({
 
 connection.connect()
 
+// added test for connection
+connection.query ("select now()" ,function(err, rows){
+    if (err){
+        console.log("Could not establish a connection", err)
+    } else {
+    console.log("Connection made, test query returned", rows)
+}
+})
+
 module.exports = connection

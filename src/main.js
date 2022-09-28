@@ -8,10 +8,11 @@ let app = express()
 
 app.use(express.json())
 
-app.listen(PORT, function() {
-    console.log("Application listening on port", PORT)
-})
 
 let bookRoutes = require("./routes/bookRoutes")
 
 app.use(bookRoutes)
+
+app.listen(PORT, function() {
+    console.log("Application listening on port", PORT)
+})
