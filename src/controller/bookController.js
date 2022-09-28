@@ -2,7 +2,7 @@ const db = require('../utils/db')
 
 // shows all the books in the books table
 let getAllBooks = function(req, res){
-    let sql = "select * from books"
+    let sql = "select name, author, haveRead from books"
     db.query(sql, function(err, rows){
         if(err)
         {console.log("list todos query failed", err)
